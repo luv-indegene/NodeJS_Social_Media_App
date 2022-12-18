@@ -1,0 +1,28 @@
+{
+  "name": "niet_social",
+  "version": "1.0.0",
+  "description": "social media website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lratan-8/NIET_Social.git"
+  },
+  "author": "Luv Ratan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lratan-8/NIET_Social/issues"
+  },
+  "homepage": "https://github.com/Lratan-8/NIET_Social#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^6.8.0",
+    "nodemon": "^2.0.20"
+  }
+}
