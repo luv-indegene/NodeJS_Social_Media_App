@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 //Now we need to provide a connection to our database. We are assuming that mongoDb is running on our system
 //localhost because for now, both our app's and database's server are running on our own system  
 //then we will give our database a name.
-mongoose.connect('mongodb://localhost/niet_social_development');
+mongoose.connect('mongodb://127.0.0.1/niet_social_development');
 //because we are in the development environment, therefore we will use development in our name.
 //There are many environment in our organisation, development, testing, production
 
