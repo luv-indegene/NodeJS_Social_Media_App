@@ -13,7 +13,7 @@ router.get('/profile', usersController.profile);
 //router 2 of users
 
 const postsController = require('../controllers/posts_controller');
-// router.get('/allposts', postsController.usersPosts);
+router.get('/allposts', postsController.usersPosts);
 
 //router 3 of users
 

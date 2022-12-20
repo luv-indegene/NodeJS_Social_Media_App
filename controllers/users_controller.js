@@ -1,8 +1,6 @@
 //we are calling it users controller because this is one controller that can control many users.
 
 
-const User = require('../models/user')
-
 module.exports.profile = function(req,res){
 
     // return res.end('<h1>This is our users profile action</h1>');
@@ -33,6 +31,8 @@ module.exports.login = function(req,res){
 //action 4 - get the signed up data
 
 module.exports.create = function(req, res){
+
+    //todo later
 
  
 

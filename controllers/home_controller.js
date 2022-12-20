@@ -5,8 +5,6 @@ Inside this file we will have different actions.*/
 
 
 module.exports.home = function(req,res){
-    console.log(req.cookies);
-    res.cookie('user_id',25)
     // return res.end('<h1>This is my first action from the home_controller</h1>')
     return res.render('home', {
         title: "Home"
