@@ -34,33 +34,7 @@ module.exports.login = function(req,res){
 
 module.exports.create = function(req, res){
 
-    //step 1 is to check that password and confirm password are same or not
-    if(req.body.password != req.body.confirm_password){
-        return res.redirect('back');
-    };
-    //next step is to check that if the user is already there in the database or not, if not then only we will create it else not
-
-    User.findOne({email: req.body.email}, function(err,user){
-        if(err){
-            console.log("error in user finding up");
-            return;
-        }
-        if(!user){
-            User.create(req.body, function(err, user){
-
-                if(err){
-                    console.log("error in creating user while signing up!" + err);
-                    return;
-                }
-
-                return res.redirect('/users/signin')
-                
-
-            });
-        }else{
-            return res.redirect('back');
-        }
-    })
+ 
 
 };
 
